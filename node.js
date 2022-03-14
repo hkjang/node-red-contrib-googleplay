@@ -16,11 +16,14 @@ module.exports = function (RED) {
                 }
             }
             try{
-                node.error(node.appId);
-                gplay.app({appId: node.appId})
-                    .then(res);
-                function res(results){
+                if(!node.func){
+                    node.func = 'reviews';
+                }
 
+                gplay[node.func](node)
+                    .then(res,res);
+
+                function res(results){
                     msg.payload = results;
                     node.send(msg);
                 }
