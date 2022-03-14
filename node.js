@@ -28,6 +28,6 @@ module.exports = function (RED) {
             }
         });
     }
-    RED.nodes.registerType("googleplayscraper", FunctionNode, {});
+    RED.nodes.registerType("googleplay", FunctionNode, {});
 };
 

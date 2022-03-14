@@ -4,7 +4,7 @@ var node = require("../node.js");
 
 helper.init(require.resolve('node-red'));
 
-describe('googleplayscraper node', function () {
+describe('googleplay node', function () {
 
     before(function (done) {
         helper.startServer(done);
@@ -19,17 +19,17 @@ describe('googleplayscraper node', function () {
     });
 
     it('should be loaded', function (done) {
-        var flow = [{ id: "n1", type: "googleplayscraper", name: "googleplayscraper" }];
+        var flow = [{ id: "n1", type: "googleplay", name: "googleplay" }];
         helper.load(node, flow, function () {
             var n1 = helper.getNode("n1");
-            n1.should.have.property('name', 'googleplayscraper');
+            n1.should.have.property('name', 'googleplay');
             done();
         });
     });
 
     it('should have payload', function (done) {
         var flow = [
-            { id: "n1", type: "googleplayscraper", name: "googleplayscraper", wires: [["n2"]] },
+            { id: "n1", type: "googleplay", name: "googleplay", wires: [["n2"]] },
             { id: "n2", type: "helper" }
         ];
         helper.load(node, flow, function () {

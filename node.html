@@ -1,4 +1,4 @@
-<script type="text/html" data-template-name="googleplayscraper">
+<script type="text/html" data-template-name="googleplay">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span
                 data-i18n="node-red:common.label.name"></span></label>
@@ -11,7 +11,7 @@
     </div>
 </script>
 
-<script type="text/html" data-help-name="googleplayscraper">
+<script type="text/html" data-help-name="googleplay">
     <p>Summary of the node.</p>
     <h3>Inputs</h3>
     <dl class="message-properties">
@@ -33,7 +33,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('googleplayscraper', {
+    RED.nodes.registerType('googleplay', {
         color: '#ffffff',
         category: 'function',
         defaults: {
@@ -43,7 +43,7 @@
         inputs: 1,
         outputs: 1,
         label: function () {
-            return this.name || 'googleplayscraper';
+            return this.name || 'googleplay';
         },
         icon: 'icon.png',
         align: 'left'
