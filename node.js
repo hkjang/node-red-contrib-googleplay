@@ -20,6 +20,7 @@ module.exports = function (RED) {
                 gplay.app({appId: node.appId})
                     .then(res);
                 function res(results){
+
                     msg.payload = results;
                     node.send(msg);
                 }
