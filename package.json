@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-googleplay",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Node-RED node for googleplay",
   "main": "node.js",
   "scripts": {

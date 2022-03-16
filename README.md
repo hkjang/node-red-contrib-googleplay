@@ -22,3 +22,29 @@ Node.js module to scrape application data from the Google Play store
 You can make this json string into a flow by using the node-red flow import function.
 
 - [sample.json](examples/sample.json)
+
+## Params
+```javascript
+msg.func = 'reviews';
+msg.appId = 'com.google.android.apps.translate'
+
+// msg.func = 'app';
+// msg.appId = 'com.google.android.apps.translate'
+
+// msg.func = 'search';
+// msg.term = "chaca";
+// msg.num =  2
+
+// msg.func = 'developer';
+// msg.devId = "Cakeplabs";
+
+// msg.func = 'suggest';
+// msg.term = "panda";
+
+// msg.func = 'categories';
+
+// msg.func = 'permissions';
+msg.country='us'
+
+return msg;
+```
