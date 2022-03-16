@@ -36,7 +36,7 @@ msg.appId = 'com.google.android.apps.translate'
 // msg.num =  2
 
 // msg.func = 'developer';
-// msg.devId = "Cakeplabs";
+// msg.devId = "Google";
 
 // msg.func = 'suggest';
 // msg.term = "panda";
